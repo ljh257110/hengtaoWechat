@@ -1,0 +1,82 @@
+<!--pages/product/product.wxml-->
+<view class="header" id="header">
+  <dl>
+    <dt>
+      <a href="/">
+        <image src="http://www.hengtao.cn/m_images/LOGO.png"></image>
+      </a>
+    </dt>
+    <dd>
+      <text>锅炉综合诊断改造方案提供商</text>
+      <p>免费服务热线：
+        <a href="tel:400-8750-777">400-8750-777</a>
+      </p>
+    </dd>
+  </dl>
+</view>
+<ul class="nav">
+  <li class="on">
+    <a href="pages/index/index">网站首页</a>
+  </li>
+  <li>
+    <a href="/mabout.php?introduceId=2">整体锅炉</a>
+  </li>
+  <li>
+    <a href="/mnewlist.php?categoryId=10">空气预热器</a>
+  </li>
+  <li>
+    <a href="/mzizhi1.php?categoryId=1210">承压部件</a>
+  </li>
+  <li>
+    <a href="/mcp.php?categoryId=10">保温材料</a>
+  </li>
+  <li>
+    <a href="/mgljs.php?introduceId=92">低温省煤气</a>
+  </li>
+  <li>
+    <a href="/mnewlist1.php?categoryId=13">锅炉技术</a>
+  </li>
+  <li>
+    <a href="/mlxwm.php?introduceId=10">联系我们</a>
+  </li>
+</ul>
+<view class="CategoryList_Title">
+  整体锅炉</view>
+<view class="nyContent"> 
+    <view class="productLayout">		
+		<dl>
+            <dt><a href="/mcpy.php?productId=19">    
+                <image src="http://www.hengtao.cn/upload/2017/ZX_20170803175959983_ZX.jpg"></image>                       
+                    </a>
+            </dt>
+            <dd>
+                <text>循环流化床锅炉</text>
+            </dd>
+        </dl>						
+		<dl>
+            <dt><a href="/mcpy.php?productId=18">                       
+                <image src="http://www.hengtao.cn/upload/2017/ZX_20170803174821804_ZX.jpg" ></image>                       
+                    </a>
+            </dt>
+            <dd>
+                <text>煤粉锅炉</text>
+            </dd>
+        </dl>			
+		<dl>
+            <dt><a href="/mcpy.php?productId=22">                       
+                <image src="http://www.hengtao.cn/upload/2017/ZX_20170803190622520_ZX.jpg" ></image>                        
+                    </a>
+            </dt>
+            <dd>
+                <text>余热锅炉</text>
+            </dd>
+        </dl>       
+     </view>
+ </view>
+
+  <view class="dress "> 
+    <p>座机：0536-2215379传真：0536-2215367</p> 
+    <p>网址：www.hengtao.cn 邮箱：hengtao@hengtao.cn</p> 
+    <p>版权所有©山东恒涛节能环保有限公司</p> 
+    <p> 鲁ICP备15023309号 </p> 
+   </view>

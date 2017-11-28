@@ -1,21 +1,235 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
+.mian {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 640px;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Microsoft YaHei;
+}
+.header {
+    padding: 3%;
+}
+.header dl {
+    overflow: hidden;
+}
+.header dt {
+    float: left;
+    margin-top: 0.1em;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+.header dt image {
+    display: block;
+    width: 96px;
+    height: 48px;
+}
+.header dd {
+  display: block;
+     margin-left: 5.3em; 
+    border-left: 1px solid #ececec;
+    padding: 0.1em 0 0.1em 0.3em;
+}
+.header dd text {
+    display: block;
+    font-size: 1em;
+    color: #2e2d2d;
+}
+.header dd p {
+    font-size: 0.8em;
+    color: #3b3b3b;
+}
+.header dd p a {
+    font-size: 1.2em;
+    color: #ff7800;
+    font-weight: bold;
+}
+swiper {
+  height: 240px;
+}
+.slide-image{
+  width: 100%;
+}
+.nav {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.nav li:hover, .nav li.on {
+    background-color: #ff7800;
+}
+.nav li {
+    float: left;
+    width: 25%;
+    position: relative;
+    background-color: #006a4f;
+}
+.nav li a {
+    display: block;
+    padding: 0.8em 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+.proMain {
+    background-color: #007054;
+    padding: 3%;
+}
+.proMain .pt {
+   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+text{
+  font-size: 12px;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.plist hd{
+    overflow: hidden;
 }
-
-.usermotto {
-  margin-top: 200px;
+.proMain .pt a {
+  
+    font-size: 1em;
+    color: #fff;
+}
+.proMain .pt span {
+    display: block;
+    font-size: 0.8em;
+    color: #d7d7d7;
+    font-family: "Arial";
+}
+.proMain .pro {
+    background-color: #fff;
+    margin-top: 3%;
+    padding-bottom: 1.3em;
+}
+.proMain .pro .plist {
+    overflow: hidden;
+}
+.proMain .pro .plist li.on {
+    background-color: #ff7800;
+    font-weight: bold;
+}
+.proMain .pro .plist li {
+    float: left;
+    width: 50%;
+    position: relative;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #18af8d;
+}
+.pcont {
+    overflow: hidden;
+    width: 100%;
+    margin: 2%;
+}
+.pcont li {
+    float: left;
+    width: 46%;
+    margin: 2%;
+}
+.pcont li {
+    float: left;
+    width: 46%;
+    margin: 2%;
+}
+.free_phone {
+  background-color: #F0F0F0;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    border-top: 5px solid #c0c0c0;
+    border-bottom: 5px solid #c0c0c0;
+}
+.free_phone image {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+}
+.free_phone view {
+    display: inline-block;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding: 0 1em;
+    background-color: #d2d2d2;
+    border-radius: 15px;
+    margin-top: 0.5em;
+}
+.free_phone view p {
+    font-size: 0.7em;
+    color: #727272;
+    
+    background-size: 1.125em;
+    font-weight: normal;
+}
+.free_phone view p image{
+  width: 1em;
+  height:1em;
+  display: inline-block;
+  padding-right: 0.2em;
+}
+.free_phone view p a {
+    font-size: 1em;
+    color: #007358;
+    font-weight: bold;
+}
+.intoMain {
+    background-color: #006D52;
+    padding: 5% 0;
+}
+.intoMain .int {
+    margin-bottom: 1.5em;
+    
+}
+.intoMain .int image {
+    display: block;
+    width: 100%;
+   height:2.5em;
+}
+.intoMain .inc image {
+    display: block;
+    width: 13em;
+    height:7em;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: #013b2d;
+    margin: 0 auto;
+}
+.intoMain .inc p {
+  display: block;
+    padding: 5% 9%;
+    font-size: 0.7em;
+    color: #fff;
+    line-height: 1.3em;
+}
+.intoMain .inc .mor {
+    display: block;
+    width: 7em;
+    margin: 0 auto;
+    padding: 0.6em 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+.dress {
+    background-color: #2d2d2d;
+    padding-top: 1.5em;
+    padding-bottom: 5em;
+    height: 1em;
+}
+.dress p {
+    display: block;
+    text-align: center;  
+    font-size: 0.75em;
+    color: #c3c3c3;
+    line-height: 1.5em;
 }

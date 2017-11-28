@@ -1,0 +1,109 @@
+/* pages/product/product.wxss */
+.header {
+    padding: 3%;
+}
+.header dl {
+    overflow: hidden;
+}
+.header dt {
+    float: left;
+    margin-top: 0.1em;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+.header dt image {
+    display: block;
+    width: 96px;
+    height: 48px;
+}
+.header dd {
+  display: block;
+     margin-left: 5.3em; 
+    border-left: 1px solid #ececec;
+    padding: 0.1em 0 0.1em 0.3em;
+}
+.header dd text {
+    display: block;
+    font-size: 1em;
+    color: #2e2d2d;
+}
+.header dd p {
+    font-size: 0.8em;
+    color: #3b3b3b;
+}
+.header dd p a {
+    font-size: 1.2em;
+    color: #ff7800;
+    font-weight: bold;
+}
+.nav {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.nav li:hover, .nav li.on {
+    background-color: #ff7800;
+}
+.nav li {
+    float: left;
+    width: 25%;
+    position: relative;
+    background-color: #006a4f;
+}
+.nav li a {
+    display: block;
+    padding: 0.8em 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+.CategoryList_Title {
+    height: 2.9em;
+    line-height: 2.9em;
+    padding: 0 .687em;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #b0b4bb;
+    font-size: 0.8em;
+    background: linear-gradient(180deg , #f2f2f2 0% , #e0e0e0 100%);
+}
+.productLayout{
+  display: block;
+  overflow: hidden;
+}
+.productLayout dl {
+    width: 46%;
+    float: left;
+    overflow: hidden;
+    margin: 0.4em 2%;
+    text-align: center;
+}
+.productLayout dt image {
+    display: block;
+    width: 100%;
+    height: 8em;
+    padding: 0.333em 0.333em;
+    box-sizing: border-box;
+    border: 0.12em solid #d7d7d7;
+}
+.productLayout dd text{
+  font-size: 0.7em;
+}
+
+.dress {
+  display: block;
+  overflow: hidden;
+    background-color: #2d2d2d;
+    padding-top: 1.5em;
+    padding-bottom: 5em;
+    height: 1em;
+}
+.dress p {
+    display: block;
+    text-align: center;  
+    font-size: 0.75em;
+    color: #c3c3c3;
+    line-height: 1.5em;
+}
