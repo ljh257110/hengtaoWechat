@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    bool:false,
+    id:7,
+    showcontent:"联系我们"
   },
-
+  consult(event){
+    console.log(event.target.id)
+    console.log(event.target.dataset.name)
+    this.setData({
+      showcontent: event.target.dataset.name,
+      id: event.target.id
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
