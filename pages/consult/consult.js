@@ -5,13 +5,65 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bool:false,
-    id:7,
-    showcontent:"联系我们"
+    arr: [{
+      "href":"/pages/index/index",
+      "id": 0,
+      "title": "网站首页"
+    },
+    {
+      "href":"/pages/consult/consult",
+      "id": 1,
+      "title": "集团简介"
+    },
+    {
+      "href": "/pages/consult/consult",
+      "id": 2,
+      "title": "董事长致辞"
+    },
+    {
+      "href": "/pages/consult/consult",
+      "id": 3,
+      "title": "企业文化"
+    },
+    {
+      "href": "/pages/consult/consult",
+      "id": 4,
+      "title": "集团荣誉"
+    },
+    {
+      "href": "/pages/consult/consult",
+      "id": 5,
+      "title":"锅炉技术"
+    },
+    {
+      "href": "/pages/consult/consult",
+        "id": 6,
+        "title": "工程案例"
+      },
+      {
+        "href": "/pages/consult/consult",
+        "id": 7,
+        "title": "联系我们"
+      }
+    ],
+  bool:false,
+  id:7,
+  showcontent:"联系我们"
   },
+  
   consult(event){
+    console.log(event.target)
     console.log(event.target.id)
     console.log(event.target.dataset.name)
+    wx.switchTab({
+      url: event.target.dataset.url
+    })
+    this.setData({
+      showcontent: event.target.dataset.name,
+      id: event.target.id
+    })
+  },
+  tech(event){
     this.setData({
       showcontent: event.target.dataset.name,
       id: event.target.id
@@ -28,48 +80,48 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })

@@ -15,10 +15,10 @@
   </dl>
 </view>
 <ul class="nav">
-  <li class="on">
-    <a href="pages/index/index" id="0">网站首页</a>
+  <li  wx:for="{{arr}}" wx:key="{{item.id}}">
+    <navigator  url='{{item.href}}' open-type="switchTab" data-url="{{item.href}}" id="{{item.id}}" bindtap='consult' data-name='{{item.title}}'>{{item.title}}</navigator>
   </li>
-  <li>
+  <!-- <li>
     <a href="pages/consult/consult/?id=1" bindtap='consult' id="1" data-name='集团简介'>集团简介</a>
   </li>
   <li>
@@ -38,7 +38,7 @@
   </li>
   <li>
     <a href="/mlxwm.php?introduceId=10" bindtap='consult' id="7" data-name='联系我们'>联系我们</a>
-  </li>
+  </li> -->
 </ul>
 <view class="CategoryList_Title">
   {{showcontent}}</view>
@@ -378,7 +378,7 @@
 </view>
 <!--联系我们  -->
 <view class="cont_c" style="text-indent:0em;" hidden="{{id != 7}}">
-	<view class="lxwm" style="padding:15px 30px 30px 30px;background:url(http://www.hengtao.cn/contact_01.jpg) no-repeat right 0;">
+	<view class="lxwm" style="padding:15px 30px 30px 15px;background:url(http://www.hengtao.cn/contact_01.jpg) no-repeat right 0;">
 		<p><b>山东恒涛节能环保有限公司</b></p>
 		<p>总部地址： 山东省高密市高新区恒涛工业园</p>
 		<p><b>吉林恒涛节能环保有限公司</b></p>

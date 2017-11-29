@@ -52,7 +52,7 @@ a {
     position: relative;
     background-color: #006a4f;
 }
-.nav li a {
+.nav li navigator {
     display: block;
     padding: 0.8em 0;
     text-align: center;
@@ -115,11 +115,13 @@ a {
   display: block;
 }
 .m-con-2 dl {
+  display: block;
     border-bottom: 1px solid #ffffff;
     box-shadow: 0 1px #e6e6e6;
     margin-bottom: 2px;
     padding: 12px 12px 12px 10px;
     position: relative;
+    height: auto;
 }
 .m-con-2 text {
     height: 15px;
@@ -142,6 +144,9 @@ a {
 }
 .clear {
     clear: both;
+}
+b{
+  font-weight: bold;
 }
 
 
