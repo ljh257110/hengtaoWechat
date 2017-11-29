@@ -109,6 +109,41 @@ a {
 .nyContent .productLayout dd text{
   font-size: 0.7em;
 }
+.m-con-2 a{
+  overflow: hidden;
+
+  display: block;
+}
+.m-con-2 dl {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px #e6e6e6;
+    margin-bottom: 2px;
+    padding: 12px 12px 12px 10px;
+    position: relative;
+}
+.m-con-2 text {
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.s-wc, a.s-wc, .s-wc a {
+    color: #0C7D5F;
+}
+.m-con-2 p {
+   display: block;
+    font-size: 12px;
+    height: 65px;
+    line-height: 22px;
+    margin: 5px;
+    overflow: hidden;
+    color: #666;
+}
+.clear {
+    clear: both;
+}
+
 
 .dress {
   display: block;
