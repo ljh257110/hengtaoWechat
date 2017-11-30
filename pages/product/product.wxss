@@ -52,7 +52,7 @@ a {
     position: relative;
     background-color: #006a4f;
 }
-.nav li a {
+.nav li navigator {
     display: block;
     padding: 0.8em 0;
     text-align: center;
@@ -91,7 +91,51 @@ a {
 .productLayout dd text{
   font-size: 0.7em;
 }
+.m-con-2 a{
+  overflow: hidden;
 
+  display: block;
+}
+.m-con-2 dl {
+  display: block;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 1px #e6e6e6;
+    margin-bottom: 2px;
+    padding: 12px 12px 12px 10px;
+    position: relative;
+    height: auto;
+}
+.m-con-2 text {
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.s-wc, a.s-wc, .s-wc a {
+    color: #0C7D5F;
+}
+.m-con-2 p {
+   display: block;
+    font-size: 12px;
+    height: 65px;
+    line-height: 22px;
+    margin: 5px;
+    overflow: hidden;
+    color: #666;
+}
+.cont_c {
+    margin-bottom: 10px;
+    line-height: 1.75em;
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.7em;
+}
+.cont_c p{
+  display: block;
+  text-indent: 2em;
+}
 .dress {
   display: block;
   overflow: hidden;

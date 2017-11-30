@@ -20,72 +20,16 @@
     </block>
   </swiper>
   <ul class="nav">
-    	  <li class="on"><a href="/m.php">网站首页</a></li>
-        <li><a href="/mabout.php?introduceId=2">关于我们</a></li>
-		    <li><a href="/mnewlist.php?categoryId=10">新闻中心</a></li>
-        <li><a href="/mzizhi1.php?categoryId=1210">企业实力</a></li>
-        <li><a href="/mcp.php?categoryId=10">产品中心</a></li>
-        <li><a href="/mgljs.php?introduceId=92">锅炉技术</a></li>
-        <li><a href="/mnewlist1.php?categoryId=13">工程案例</a></li>
-        <li><a href="/mlxwm.php?introduceId=10">联系我们</a></li>
+    	  <li class="on"><navigator url="/m.php">网站首页</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab">关于我们</navigator></li>
+		    <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "2" data-url="/pages/product/product">新闻中心</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "3" data-url="/pages/product/product">企业实力</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "4" data-url="/pages/product/product">产品中心</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "5" data-url="/pages/product/product">锅炉技术</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "6" data-url="/pages/product/product">工程案例</navigator></li>
+        <li><navigator url="/pages/consult/consult" bindtab="aa" data-id="1"  open-type="switchTab" id = "7" data-url="/pages/product/product">联系我们</navigator></li>
   </ul>
-   <view class="proMain"> 
-    <p class="pt"> <a href="/product/">产品中心</a> <span>product center</span> </p> 
-    <view class="pro" id="projlxl"> 
-     <ul class="plist hd"> 
-      <li class="">整体锅炉</li> 
-      <li class="on">空气预热器</li> 
-    <li class="">承压部件</li> 
-    <li class="">耐火保温材料</li> 
-    <li style="width:100%;" class="">低（低）温省煤器</li>
-     </ul> 
-     <view class="tempWrap" style="overflow:hidden; position:relative;"><view class="bd" style="width: 1765px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 200ms; transform: translate(-353px, 0px) translateZ(0px);"> 
-      <view class="procon" style="display: table-cell; vertical-align: top; width: 353px;"> 
-       <ul class="pcont"> 
-        
-      <li><a href="/mcpy.php?productId=18"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170803174821804_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=18"> 煤粉锅炉</a></p> </li> 
-    <li><a href="/mcpy.php?productId=19"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170803175959983_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=19"> 循环流化床锅炉</a></p> </li> 
-    <li><a href="/mcpy.php?productId=22"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170803190622520_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=22"> 余热锅炉</a></p> </li> 
-      </ul> 
-       <a href="/mcp.php?categoryId=10" class="mor">查看更多+</a> 
-      </view> 
-      <view class="procon" style="display: table-cell; vertical-align: top; width: 353px;"> 
-       <ul class="pcont"> 
-          <li><a href="/mcpy.php?productId=11"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170801220704320_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=11"> 搪瓷管空气预热器</a></p> </li> 
-    <li><a href="/mcpy.php?productId=14"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170801224504465_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=14"> 普通管空气预热器</a></p> </li> 
-    <li><a href="/mcpy.php?productId=47"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171019143742714_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=47"> 回转式空气预热器—蓄热元件</a></p> </li> 
-   </ul> 
-       <a href="/mcp.php?categoryId=11" class="mor">查看更多+</a> 
-      </view> 
-    <view class="procon" style="display: table-cell; vertical-align: top; width: 353px;"> 
-       <ul class="pcont"> 
-          <li><a href="/mcpy.php?productId=15"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170801224947025_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=15"> 膜式水冷壁</a></p> </li> 
-    <li><a href="/mcpy.php?productId=44"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171019143036231_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=44"> 蛇形管</a></p> </li> 
-    <li><a href="/mcpy.php?productId=45"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171019142006887_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=45"> 集箱</a></p> </li> 
-    <li><a href="/mcpy.php?productId=46"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171019143443988_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=46"> 翅片管式省煤器</a></p> </li> 
-  </ul> 
-       <a href="/mcp.php?categoryId=12" class="mor">查看更多+</a> 
-      </view> 
-    <view class="procon" style="display: table-cell; vertical-align: top; width: 353px;"> 
-       <ul class="pcont"> 
-          <li><a href="/mcpy.php?productId=37"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170803195534471_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=37"> 高强耐磨耐火可塑料</a></p> </li> 
-    <li><a href="/mcpy.php?productId=38"> <image src="http://www.hengtao.cn/upload/2017/ZX_20170803195642081_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=38"> 高效节能保温浇注料</a></p> </li> 
-  </ul> 
-       <a href="/mcp.php?categoryId=13" class="mor">查看更多+</a> 
-      </view> 
-    <view class="procon" style="display: table-cell; vertical-align: top; width: 353px;"> 
-       <ul class="pcont"> 
-        
-      <li><a href="/mcpy.php?productId=43"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171019084814119_ZX.jpg"></image></a> <p> <a href="/mcpy.php?productId=43"> 低温省煤器</a></p> </li> 
-    <li><a href="/mcpy.php?productId=49"> <image src="http://www.hengtao.cn/upload/2017/ZX_20171028154702577_ZX.png"></image></a> <p> <a href="/mcpy.php?productId=49"> 低低温省煤器</a></p> </li> 
-      </ul> 
-       <a href="/mcp.php?categoryId=10" class="mor">查看更多+</a> 
-      </view> 
-    
-    
-     </view></view> 
-    </view> 
-   </view>
+   
 
    <view class="free_phone"> 
       <image src="http://www.hengtao.cn/m_images/zximg.png" alt=""></image> 
@@ -99,7 +43,7 @@
     <view class="inc"> 
        <a href="/mabout.php?introduceId=2"><image src="http://www.hengtao.cn/m_images/a1.jpg" alt=""></image></a> 
        <p>山东恒涛集团是专业从事电站锅炉、余热锅炉研发、制造、安装、节能改造以及热电供应，光伏能源，锻压机床，汽车服务，学前教育于一体的综合性集团公司。集团公司总注册资金4.7亿元，厂区面积140多万平方米，员工2000余人，总资产30多亿元。集团拥有山东恒涛节能环保有限公司、吉林恒涛节能环保有限公司、长春恒涛热电有限公司、恒涛汽车销售服务有限公司、高密恒涛润滑油有限公司、恒涛幼儿园等下属企业。</p> 
-       <a href="/mabout.php?introduceId=2" class="mor">查看更多+</a> 
+       <navigator url="/pages/consult/consult" bindtab="more" data-id="1" class="mor" open-type="switchTab">查看更多+</navigator> 
     </view> 
    </view> 
 

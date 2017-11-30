@@ -15,45 +15,24 @@
   </dl>
 </view>
 <ul class="nav">
-  <li class="on">
-    <a href="pages/index/index">网站首页</a>
-  </li>
-  <li>
-    <a href="/mabout.php?introduceId=2">整体锅炉</a>
-  </li>
-  <li>
-    <a href="/mnewlist.php?categoryId=10">空气预热器</a>
-  </li>
-  <li>
-    <a href="/mzizhi1.php?categoryId=1210">承压部件</a>
-  </li>
-  <li>
-    <a href="/mcp.php?categoryId=10">保温材料</a>
-  </li>
-  <li>
-    <a href="/mgljs.php?introduceId=92">低温省煤气</a>
-  </li>
-  <li>
-    <a href="/mnewlist1.php?categoryId=13">锅炉技术</a>
-  </li>
-  <li>
-    <a href="/mlxwm.php?introduceId=10">联系我们</a>
+  <li  wx:for="{{arr}}" wx:key="{{item.id}}">
+    <navigator  url='{{item.href}}' open-type="switchTab" data-url="{{item.href}}" id="{{item.id}}" bindtap='consult' data-name='{{item.title}}'>{{item.title}}</navigator>
   </li>
 </ul>
 <view class="CategoryList_Title">
-  整体锅炉</view>
+ {{showcontent}}</view>
 <view class="nyContent"> 
     <view class="productLayout">		
-		<dl>
+		<dl wx:for="{{imgarr[id-1]}}" wx:key="{{item.title}}">
             <dt><a href="/mcpy.php?productId=19">    
-                <image src="http://www.hengtao.cn/upload/2017/ZX_20170803175959983_ZX.jpg"></image>                       
+                <image src="{{item.img}}"></image>                       
                     </a>
             </dt>
             <dd>
-                <text>循环流化床锅炉</text>
+                <text>{{item.title}}</text>
             </dd>
-        </dl>						
-		<dl>
+      </dl>						
+		<!-- <dl>
             <dt><a href="/mcpy.php?productId=18">                       
                 <image src="http://www.hengtao.cn/upload/2017/ZX_20170803174821804_ZX.jpg" ></image>                       
                     </a>
@@ -70,9 +49,141 @@
             <dd>
                 <text>余热锅炉</text>
             </dd>
-        </dl>       
+        </dl>        -->
      </view>
  </view>
+<!--工程案例  -->
+<view class="nyContent"  hidden="{{id != 6}}">
+  <view class="m-con-2">
+    <a title="广东宝丽华30万机组空预器改造" href="/mnews.php?articleId=524" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">广东宝丽华30万机组空预器改造</text>
+        <p>本项目改造的锅炉是广东宝丽华电力有限公司梅县荷树园电厂1~4#锅炉，锅炉为东方电气集团（锅炉）股份有限公司设计及制造的循环流化床锅炉，锅炉型号为DG1025/17.45-Ⅱ16 原锅炉空预器低温段管箱出现低温腐蚀现象，堵灰严重，导致排烟温.
+        </p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="内蒙古京海30万机组空预器改造" href="/mnews.php?articleId=525" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">内蒙古京海30万机组空预器改造</text>
+        <p>京海电厂锅炉为东方锅炉（集团）有限公司设计生产的DG1177/17.4-Ⅱ1型CFB锅炉。锅炉采用单汽包、自然循环、循环流化床燃烧方式。锅炉主要由一个膜式水冷壁炉膛，三台汽冷式旋风分离器和一个由汽冷包墙包覆的尾部竖井（HR检）三部分组成。空.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="武汉凯迪生物质锅炉搪瓷管空预器改造" href="/mnews.php?articleId=526" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">武汉凯迪生物质锅炉搪瓷管空预器改造</text>
+        <p>本项目为凯迪生态环境科技股份有限公司下属20家子公司生物质电厂空预器设计项目，共分两批：其中第一批项目为13台65t/h中温、次高压锅炉管箱式空气预热器部件的设计、制造；第二批项目为30MW机组8*120t/h生物质循环流化床锅炉空气预热器.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="烟台恒通3×75T/H锅炉热效率提高" href="/mnews.php?articleId=527" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">烟台恒通3×75T/H锅炉热效率提高</text>
+        <p>烟台恒通热电有限公司现有3*75锅炉为济南锅炉集团有限公司生产的中压中温循环流化床锅炉（图号为46600，锅炉型号YG-75/3.82-M1），设计额定参数为：蒸发量：75t/h,额定蒸汽压力：3.82MPa，温度：450℃。运行过程中排烟.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="北京国信恒润能源环境工程3×75T/H，2×220T/H 受热面改造总承包" href="/mnews.php?articleId=528" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">北京国信恒润能源环境工程3×75T/H，2×220T/H 受热面改造总承包</text>
+        <p>本项目改造的锅炉是神化神木化学工业公司3*75t/h（HG-75/3.82-YM17）中温中压煤粉炉，2*220t/hCG-220/9.81-M23）煤粉炉，由于环保要求需要增设SCR脱硝反应装置，我公司负责该项目受热面部分改.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="福建龙净（宁夏银川）6台锅炉尾部受热面改造（脱硝）" href="/mnews.php?articleId=520" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">福建龙净（宁夏银川）6台锅炉尾部受热面改造（脱硝）</text>
+        <p>本项目改造的锅炉是银川热电有限公司的1~6#炉，其中1~3#炉为75t/h次高温次高压煤粉炉，4~6#炉为150t/h次高温次高压煤粉炉。改造的目地是满足脱硝入口烟气温度的要求，保证催化剂温度合适，锅炉改造的范围是省煤器和空气预热器。 将.
+        </p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="四川鸿展工业有限责任公司2台130T/H整体锅炉" href="/mnews.php?articleId=521" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">四川鸿展工业有限责任公司2台130T/H整体锅炉</text>
+        <p>本项目是四川鸿展工业有限责任公司订购我公司两台HTG-130/5.3-M1型循环流化床锅炉。锅炉采用膜式水冷壁结构；采用高温、绝热、蜗壳式旋风分离器作为高效分离系统；尾部设螺旋鳍片管式省煤器和一、二次风空气预热器。运转层标高为8米，室内布置.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="招远玲珑热电增容改造项目" href="/mnews.php?articleId=522" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">招远玲珑热电增容改造项目</text>
+        <p>招远玲珑热电有限公司锅炉为济南锅炉集团有限公司生产的次高压中温循环流化床锅炉（图号为46700）。原设计额定参数为：蒸发量：75t/h,额定蒸汽压力：5.29MPa，温度：450℃，给水温度：150℃，一二次风预热温度：150℃，排烟温度：.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="夏津热电增容低氮改造项目" href="/mnews.php?articleId=523" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">夏津热电增容低氮改造项目</text>
+        <p>夏津县热电有限公司1#、2#锅炉为济南锅炉集团有限公司生产的次高压中温循环流化床锅炉（图号为46700），2004年12月投入运行。原设计额定参数为：蒸发量：75t/h,额定蒸汽压力：5.29MPa，温度：450℃，给水温度：150℃，一二.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+
+    <a title="德州华鲁恒升化工集团75T/H循环流化床锅炉蛇形光管式省煤器改造为螺旋翅片管式省煤器工程" href="/mnews.php?articleId=401" class="s-babg">
+      <dl class="prolistbgfa">
+
+        <text class="s-wc">德州华鲁恒升化工集团75T/H循环流化床锅炉蛇形光管式省煤器改造为螺旋翅片管式省煤器工程</text>
+        <p>德州华鲁恒升化工集团公司水汽车间有济锅产三台75T/H循环流化床锅炉，每台锅炉的运行时间累计均超过三年，原有省煤器由于磨损严重，导致经常发生泄漏，严重影响了锅炉的安全经济运行，给该集团公司的整体生产造成了很大的危害。为此，华鲁恒升集团公司通.</p>
+        <span></span>
+        <view class="clear">
+        </view>
+      </dl>
+    </a>
+  </view>
+</view>
+<!--联系我们  -->
+<view class="cont_c" style="text-indent:0em;" hidden="{{id != 7}}">
+	<view class="lxwm" style="padding:15px 30px 30px 15px;background:url(http://www.hengtao.cn/contact_01.jpg) no-repeat right 0;">
+		<p><b>山东恒涛节能环保有限公司</b></p>
+		<p>总部地址： 山东省高密市高新区恒涛工业园</p>
+		<p><b>吉林恒涛节能环保有限公司</b></p>
+		<p>地址：吉林永吉经济开发区建设路022号</p>
+		<p>电话：0536-2215379</p>
+		<p>销售热线：4008-750-777 0536-2215379</p>
+		<p>供应部电话：0536-2215311</p>
+		<p>传真：0536-2215367</p>
+		<p>电子邮箱:hengtao@hengtao.cn</p>
+		<p>网址: http://www.hengtao.cn</p>
+	</view>				
+</view>
+
 
   <view class="dress "> 
     <p>座机：0536-2215379 传真：0536-2215367</p> 

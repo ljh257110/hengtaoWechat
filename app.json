@@ -7,25 +7,28 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "恒涛集团",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#707070",
-    "selectedColor": "#1afa29",
+    "selectedColor": "#006D52",
     "list": [
       {
-        
+        "iconPath":"images/icon/首页.png",
+        "selectedIconPath":"images/icon_select/首页.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        
+        "iconPath": "images/icon/产品.png",
+        "selectedIconPath": "images/icon_select/产品.png",
         "pagePath": "pages/product/product",
         "text": "产品中心"
       },
       {
-       
+       "iconPath": "images/icon/咨询.png",
+      "selectedIconPath": "images/icon_select/咨询.png",
         "pagePath": "pages/consult/consult",
         "text": "在线咨询"
       }

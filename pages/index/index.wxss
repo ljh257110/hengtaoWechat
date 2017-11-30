@@ -68,7 +68,7 @@ swiper {
     position: relative;
     background-color: #006a4f;
 }
-.nav li a {
+.nav li navigator {
     display: block;
     padding: 0.8em 0;
     text-align: center;
